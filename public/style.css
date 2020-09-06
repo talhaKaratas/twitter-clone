@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+}
+
+body {
+    --twitter-color: #1da1f2;
+    --twitter-background: #e8f5fe;
+}
+
+.app {
+    display: flex;
+    height: 100vh;
+    max-width: 1270px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.sidebar {
+    font-family: 'Noto Sans JP', sans-serif;
+    padding-right: 20px;
+    border-right: 1px solid var(--twitter-background);
+    flex: 0.2;
+}
+
+.sidebar i {
+    font-size: 25px;
+}
+
+.sidebar__twitterIcon > i {
+    padding: 10px;
+    margin-left: 5px;
+    width: fit-content;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--twitter-color);
+}
+
+.sidebar__twitterIcon > i:hover {
+    background-color: var(--twitter-background);
+}
+
+.sidebarOptions {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: fit-content;
+    padding-right: 15px;
+    border-radius: 30px;
+}
+
+.sidebarOptions:hover {
+    color: var(--twitter-color);
+    background-color: var(--twitter-background);
+}
+
+.sidebarOptions > i {
+    padding: 15px;
+    width: 25px;
+}
+
+.sidebarTweet__button {
+    padding: 15px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: var(--twitter-color);
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    border-radius: 30px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.sidebarTweet__button:hover {
+    filter: brightness(90%);
+}
+
+.feed {
+    flex: 0.5;
+    min-width: fit-content;
+    overflow-y: scroll;
+    background-color: #e6ecf0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.feed::-webkit-scrollbar {
+    display: none;
+}
+
+.feed__header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+    padding: 15px 10px;
+    border-bottom: 1px solid var(--twitter-background);
+}
+
+.feed__inputBox {
+    display: flex;
+    background-color: #fff;
+    padding-bottom: 10px;
+}
+
+.feed__avatar {
+    font-size: 45px;
+    padding: 0 10px;
+    margin-left: 5px;
+    height: fit-content;
+}
+
+.inputBox__content {
+    width: 100%;
+    margin-top: 22px;
+}
+
+.feed__inputBoxInput  {
+    width: 90%;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+
+.inputBox__bottom {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inputBox__icon {
+    font-size: 20px;
+    display: flex;
+    flex: 0.4;
+    justify-content: space-between;
+    color: var(--twitter-color);
+}
+
+.inputBox__icon > i  {
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.inputBox__icon > i:hover {
+    background-color: var(--twitter-background);
+}
+
+.inputBoxTweet__button button{
+    width: 100px;
+    padding: 10px 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: var(--twitter-color);
+    color: #fff;
+    font-weight: 600;
+    margin-right: 25px;
+}
+
+.inputBoxTweet__button button:hover {
+    filter: brightness(90%);
+}
+
+.post {
+    display: flex;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.post__avatar {
+    margin-right: 5px;
+}
+
+.post__body {
+    border: 1px solid;
+    overflow: hidden;
+    padding: 5px 8px;
+    word-wrap: break-word;
+    width: 555px;
+}
+
+
+.postHeader__text {
+    display: flex;
+}
+
+.widgets {
+    flex: 0.2;
+    border-left: 1px solid var(--twitter-background);
+}
